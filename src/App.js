@@ -37,6 +37,13 @@ class App extends Component {
     console.log(this.state.likedQuotes)
     return (
       <div className="App">
+      <select>
+        <option> chucknorris</option>
+        <option> chucknorris</option>
+        <option> chucknorris</option>
+        <option> chucknorris</option>
+        <option> chucknorris</option>
+        </select>
         <h1>
           {this.state.quote}
         </h1>
