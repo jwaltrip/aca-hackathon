@@ -38,7 +38,9 @@ class App extends Component {
       return (
         <ul>
           {this.state.likedQuotes.map((quote, idx) => {
-            return <li key={idx}>{quote}</li>
+            const bgColor = (idx % 2 === 0) ? '#dddddd' : 'white';
+
+            return <li key={idx} style={{ backgroundColor: bgColor }}>{quote}</li>
           })}
         </ul>
       );
@@ -50,14 +52,16 @@ class App extends Component {
     console.log(this.state.likedQuotes)
     return (
       <div className="App">
-        <h1>
-          {this.state.quote}
-        </h1>
-        <input type='button' value='refresh' onClick={() => this.getQuote()}/>
-        <input type='button' value='like' onClick={() => this.likedQuote()}/>
-        <br/>
-        <h3>Liked Quotes</h3>
-        {this.listLikedQuotes()}
+        <div className="container">
+          <h1 onClick={() => this.getQuote()}>
+            {this.state.quote}
+          </h1>
+          <input className="new-quote-btn" type='button' value='Generate New Quote' onClick={() => this.getQuote()}/>
+          <input className="like-quote-btn" type='button' value='Like Quote' onClick={() => this.likedQuote()}/>
+          <br/>
+          <h3>Liked Quotes</h3>
+          {this.listLikedQuotes()}
+        </div>
       </div>
     );
   }
