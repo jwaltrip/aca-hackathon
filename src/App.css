@@ -1,28 +1,39 @@
 .App {
   text-align: center;
+  height: 900px;
+  background-color: #007078;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1 {
+  background-color: #00bac7;
+  padding: 30px;
+  background-image: url("https://www.transparenttextures.com/theme/images/transparent.png");
+  font-family: "Permanent Marker", cursive;
+  margin: auto;
+
+  width: 80%;
+  padding: 70px auto;
+  border: 3px solid grey;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 140px;
 }
 
-.App-title {
-  font-size: 1.5em;
+h3 {
+
+font-size: 25px;
+
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+input {
+  font-size: 60px;
+  margin: 30px 20px;
+  height: 200px;
+  width: 120px;
+  border:
 }
